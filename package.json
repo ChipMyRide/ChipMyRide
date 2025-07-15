@@ -1,6 +1,6 @@
 {
   "type": "module",
-  "name": "chipmyride-site",
+  "name": "chipmyride",
   "version": "1.0.0",
   "private": true,
   "scripts": {
