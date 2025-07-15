@@ -15,7 +15,7 @@
       { name: "Getriebeoptimierung", price: "350 €", link: "/tuning/getriebe" },
       { name: "VCDS Kodierung", price: "50 €", link: "/tuning/vcds" },
     ].map((item, index) => {
-      const centerIndex = 10;
+      const centerIndex = 10; // VCDS mittig zentriert
       return (
         <div
           key={index}
@@ -26,7 +26,7 @@
           <span className="font-bold text-left w-1/3">{item.name}</span>
           <span className="text-left w-1/3 font-bold">{item.price}</span>
           <a
-            href={item.link || "#"}
+            href={item.link}
             className="mt-1 px-4 py-1 bg-orange-500 hover:bg-orange-600 text-black font-semibold rounded-xl text-sm text-center"
           >
             Infos
