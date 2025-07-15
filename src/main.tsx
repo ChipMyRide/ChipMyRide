@@ -1,10 +1,10 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import './index.css'
-import ChipMyRidePage from './ChipMyRidePage'
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import './index.css';
+import App from './App'; // <- wichtig, nicht mehr ChipMyRidePage
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <ChipMyRidePage />
-  </React.StrictMode>,
-)
+    <App />
+  </React.StrictMode>
+);
