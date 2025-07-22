@@ -5,7 +5,7 @@ import Home from './pages/Home';
 import Stage1InfoPage from './pages/Stage1InfoPage';
 import Stage2InfoPage from './pages/Stage2InfoPage';
 
-export default function App() {
+function App() {
   return (
     <Router>
       <Routes>
@@ -16,3 +16,5 @@ export default function App() {
     </Router>
   );
 }
+
+export default App;
