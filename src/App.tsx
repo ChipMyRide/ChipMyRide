@@ -10,8 +10,8 @@ export default function App() {
     <Router>
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/tuning/stage1" element={<stage1InfoPage />} />
-        <Route path="/tuning/stage2" element={<stage2InfoPage />} />
+        <Route path="/stage1-info-page" element={<Stage1InfoPage />} />
+        <Route path="/stage2-info-page" element={<Stage2InfoPage />} />
       </Routes>
     </Router>
   );
