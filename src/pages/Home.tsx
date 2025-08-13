@@ -1,4 +1,3 @@
-import React from "react";
 import { Link } from "react-router-dom";
 
 function Home() {
@@ -8,24 +7,24 @@ function Home() {
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 w-full max-w-5xl mx-auto">
         {[
-          { name: "Stage 1", price: "550 €", link: "#/tuning/stage1" },
-          { name: "Stage 2", price: "750 €", link: "#/tuning/stage2" },
-          { name: "Stage 3", price: "950 €", link: "#/tuning/stage3" },
-          { name: "Eco Tuning", price: "450 €", link: "#/tuning/eco" },
-          { name: "Pops & Bangs", price: "450 €", link: "#/tuning/pops" },
-          { name: "DSG Knallen", price: "150 €", link: "#/tuning/dsg-knallen" },
-          { name: "Launch Control", price: "150 €", link: "#/tuning/launchcontrol" },
-          { name: "Begrenzer (Vmax / RPM)", price: "150 €", link: "#/tuning/begrenzer" },
-          { name: "DPF / AGR / OPF Abschaltung", price: "350 €", link: "#/tuning/abschaltung" },
-          { name: "Getriebeoptimierung", price: "350 €", link: "#/tuning/getriebe" },
-          { name: "VCDS Kodierung", price: "50 €", link: "#/tuning/vcds" },
+          { name: "Stage 1", price: "550 €", link: "/tuning/stage1" },
+          { name: "Stage 2", price: "750 €", link: "/tuning/stage2" },
+          { name: "Stage 3", price: "950 €", link: "/tuning/stage3" },
+          { name: "Eco Tuning", price: "450 €", link: "/tuning/eco" },
+          { name: "Pops & Bangs", price: "450 €", link: "/tuning/pops" },
+          { name: "DSG Knallen", price: "150 €", link: "/tuning/dsg-knallen" },
+          { name: "Launch Control", price: "150 €", link: "/tuning/launchcontrol" },
+          { name: "Begrenzer (Vmax / RPM)", price: "150 €", link: "/tuning/begrenzer" },
+          { name: "DPF / AGR / OPF Abschaltung", price: "350 €", link: "/tuning/abschaltung" },
+          { name: "Getriebeoptimierung", price: "350 €", link: "/tuning/getriebe" },
+          { name: "VCDS Kodierung", price: "50 €", link: "/tuning/vcds" },
         ].map((item, index) => {
           const centerIndex = 10;
           return (
             <div
               key={index}
               className={`flex items-center justify-between bg-cyan-600 text-white rounded-2xl p-4 hover:bg-cyan-500 transition duration-300 ${
-                index === centerIndex ? "md:col-span-2 justify-center" : ""
+                index === centerIndex ? 'md:col-span-2 justify-center' : ''
               }`}
             >
               <span className="font-bold text-left w-1/3">{item.name}</span>
