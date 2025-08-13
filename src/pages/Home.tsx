@@ -8,30 +8,30 @@ function Home() {
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 w-full max-w-5xl mx-auto">
         {[
-          { name: "Stage 1", price: "550 €", link: "/stage1InfoPage" },
-          { name: "Stage 2", price: "750 €", link: "/stage2InfoPage" },
-          { name: "Stage 3", price: "950 €", link: "/stage3" },
-          { name: "Eco Tuning", price: "450 €", link: "/eco" },
-          { name: "Pops & Bangs", price: "450 €", link: "/pops" },
-          { name: "DSG Knallen", price: "150 €", link: "/dsg-knallen" },
-          { name: "Launch Control", price: "150 €", link: "/launchcontrol" },
-          { name: "Begrenzer (Vmax / RPM)", price: "150 €", link: "/begrenzer" },
-          { name: "DPF / AGR / OPF Abschaltung", price: "350 €", link: "/abschaltung" },
-          { name: "Getriebeoptimierung", price: "350 €", link: "/getriebe" },
-          { name: "VCDS Kodierung", price: "50 €", link: "/vcds" },
+          { name: "Stage 1", price: "550 €", link: "/stage1-info-page" },
+          { name: "Stage 2", price: "750 €", link: "/stage2-info-page" },
+          { name: "Stage 3", price: "950 €", link: "/tuning/stage3" },
+          { name: "Eco Tuning", price: "450 €", link: "/tuning/eco" },
+          { name: "Pops & Bangs", price: "450 €", link: "/tuning/pops" },
+          { name: "DSG Knallen", price: "150 €", link: "/tuning/dsg-knallen" },
+          { name: "Launch Control", price: "150 €", link: "/tuning/launchcontrol" },
+          { name: "Begrenzer (Vmax / RPM)", price: "150 €", link: "/tuning/begrenzer" },
+          { name: "DPF / AGR / OPF Abschaltung", price: "350 €", link: "/tuning/abschaltung" },
+          { name: "Getriebeoptimierung", price: "350 €", link: "/tuning/getriebe" },
+          { name: "VCDS Kodierung", price: "50 €", link: "/tuning/vcds" },
         ].map((item, index) => {
           const centerIndex = 10;
           return (
             <div
               key={index}
               className={`flex items-center justify-between bg-cyan-600 text-white rounded-2xl p-4 hover:bg-cyan-500 transition duration-300 ${
-                index === centerIndex ? "md:col-span-2 justify-center" : ""
+                index === centerIndex ? 'md:col-span-2 justify-center' : ''
               }`}
             >
               <span className="font-bold text-left w-1/3">{item.name}</span>
               <span className="text-left w-1/3 font-bold">{item.price}</span>
               <Link
-                to={item.link || "#"}
+                to={item.link}
                 className="mt-1 px-4 py-1 bg-orange-500 hover:bg-orange-600 text-black font-semibold rounded-xl text-sm text-center"
               >
                 Infos
