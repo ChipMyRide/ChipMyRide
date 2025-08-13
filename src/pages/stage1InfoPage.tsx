@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function Stage1InfoPage() {
+export default function stage1InfoPage() {
   return (
     <div className="min-h-screen bg-black text-white px-4 py-10">
       <div className="max-w-5xl mx-auto space-y-10">
