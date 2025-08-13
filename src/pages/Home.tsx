@@ -8,8 +8,8 @@ function Home() {
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 w-full max-w-5xl mx-auto">
         {[
-          { name: "Stage 1", price: "550 €", link: "/tuning/stage1" },
-          { name: "Stage 2", price: "750 €", link: "/tuning/stage2" },
+          { name: "Stage 1", price: "550 €", link: "/stage1-info-page" },
+          { name: "Stage 2", price: "750 €", link: "/stage2-info-page" },
           { name: "Stage 3", price: "950 €", link: "/tuning/stage3" },
           { name: "Eco Tuning", price: "450 €", link: "/tuning/eco" },
           { name: "Pops & Bangs", price: "450 €", link: "/tuning/pops" },
