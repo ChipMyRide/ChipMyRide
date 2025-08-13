@@ -2,8 +2,8 @@ import React from 'react';
 import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 
 import HomePage from './pages/Home';
-import stage1InfoPage from './pages/stage1InfoPage';
-import stage2InfoPage from './pages/stage2InfoPage';
+import Stage1InfoPage from './pages/stage1InfoPage';
+import Stage2InfoPage from './pages/stage2InfoPage';
 
 export default function App() {
   return (
