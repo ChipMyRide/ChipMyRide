@@ -1,3 +1,6 @@
+import React from "react";
+import { Link } from "react-router-dom";
+
 function Home() {
   return (
     <div className="flex flex-col items-center mt-12 px-4">
@@ -22,28 +25,28 @@ function Home() {
             <div
               key={index}
               className={`flex items-center justify-between bg-cyan-600 text-white rounded-2xl p-4 hover:bg-cyan-500 transition duration-300 ${
-                index === centerIndex ? 'md:col-span-2 justify-center' : ''
+                index === centerIndex ? "md:col-span-2 justify-center" : ""
               }`}
             >
               <span className="font-bold text-left w-1/3">{item.name}</span>
               <span className="text-left w-1/3 font-bold">{item.price}</span>
-              <a
-                href={item.link || "#"}
+              <Link
+                to={item.link || "#"}
                 className="mt-1 px-4 py-1 bg-orange-500 hover:bg-orange-600 text-black font-semibold rounded-xl text-sm text-center"
               >
                 Infos
-              </a>
+              </Link>
             </div>
           );
         })}
       </div>
 
-      <a
-        href="/kontakt"
+      <Link
+        to="/kontakt"
         className="mt-8 px-6 py-2 bg-orange-500 hover:bg-orange-600 text-black font-semibold rounded-xl"
       >
         Tuning sichern
-      </a>
+      </Link>
     </div>
   );
 }
