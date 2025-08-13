@@ -8,17 +8,17 @@ function Home() {
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 w-full max-w-5xl mx-auto">
         {[
-          { name: "Stage 1", price: "550 €", link: "#/stage1InfoPage" },
-          { name: "Stage 2", price: "750 €", link: "#/stage2InfoPage" },
-          { name: "Stage 3", price: "950 €", link: "/tuning/stage3" },
-          { name: "Eco Tuning", price: "450 €", link: "/tuning/eco" },
-          { name: "Pops & Bangs", price: "450 €", link: "/tuning/pops" },
-          { name: "DSG Knallen", price: "150 €", link: "/tuning/dsg-knallen" },
-          { name: "Launch Control", price: "150 €", link: "/tuning/launchcontrol" },
-          { name: "Begrenzer (Vmax / RPM)", price: "150 €", link: "/tuning/begrenzer" },
-          { name: "DPF / AGR / OPF Abschaltung", price: "350 €", link: "/tuning/abschaltung" },
-          { name: "Getriebeoptimierung", price: "350 €", link: "/tuning/getriebe" },
-          { name: "VCDS Kodierung", price: "50 €", link: "/tuning/vcds" },
+          { name: "Stage 1", price: "550 €", link: "/stage1InfoPage" },
+          { name: "Stage 2", price: "750 €", link: "/stage2InfoPage" },
+          { name: "Stage 3", price: "950 €", link: "/stage3" },
+          { name: "Eco Tuning", price: "450 €", link: "/eco" },
+          { name: "Pops & Bangs", price: "450 €", link: "/pops" },
+          { name: "DSG Knallen", price: "150 €", link: "/dsg-knallen" },
+          { name: "Launch Control", price: "150 €", link: "/launchcontrol" },
+          { name: "Begrenzer (Vmax / RPM)", price: "150 €", link: "/begrenzer" },
+          { name: "DPF / AGR / OPF Abschaltung", price: "350 €", link: "/abschaltung" },
+          { name: "Getriebeoptimierung", price: "350 €", link: "/getriebe" },
+          { name: "VCDS Kodierung", price: "50 €", link: "/vcds" },
         ].map((item, index) => {
           const centerIndex = 10;
           return (
