@@ -1,3 +1,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* falls du einen globalen Hintergrund/Banner hattest, kommt er hier rein */
+html, body, #root { height: 100%; }
